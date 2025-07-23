@@ -9,7 +9,7 @@ export default function GlowingCard({ title, description }: GlowingCardProps) {
   return (
     <>
       <div className="card">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+        <h3 className="text-xl text-muted-foreground font-semibold mb-2">{title}</h3>
         <p className="font-sans text-muted-foreground text-sm">{description}</p>
         <div className="glow" />
       </div>
