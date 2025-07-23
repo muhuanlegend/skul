@@ -1,3 +1,4 @@
+import { IconWorld } from '@tabler/icons-react';
 import {
   Code,
   Terminal,
@@ -5,38 +6,40 @@ import {
   Rocket,
   Book,
   PlusCircle,
+  Calendar,
+  GitGraphIcon,
 } from 'lucide-react';
 
 const features = [
   {
-    icon: <Code className="h-6 w-6" />,
-    title: 'Developer-Friendly',
-    desc: 'Tailored for developers to create and iterate fast, with minimal overhead and maximum flexibility.',
+    icon: <Calendar className="h-6 w-6" />,
+    title: 'Smart Administration',
+    desc: 'Automate attendance, fee collection, and reports with ease. Free up hours of manual work with intelligent tools that handle routine tasks, giving you more time to focus on student success.',
   },
   {
     icon: <Terminal className="h-6 w-6" />,
-    title: 'CLI Support',
-    desc: 'Command-line interface support for seamless development and workflow integration.',
+    title: 'Seamless Communication',
+    desc: 'Keep parents, teachers, and students connected in real time. Send instant updates, share announcements, and build a stronger school community through integrated messaging and notifications.',
   },
   {
-    icon: <Paintbrush className="h-6 w-6" />,
-    title: 'Easily Customizable',
-    desc: 'Every block is built to be editable. From layout to logic, style to structure—make it your own.',
+    icon: <GitGraphIcon className="h-6 w-6" />,
+    title: 'Data-Driven Insights',
+    desc: 'Make smarter decisions with powerful analytics. Track academic performance, monitor trends, and get actionable insights to improve teaching quality and overall school efficiency.',
   },
   {
     icon: <Rocket className="h-6 w-6" />,
-    title: 'v0 Support',
-    desc: 'Launch fast with confidence. Perfect for MVPs, prototypes, and weekend projects.',
+    title: ' Effortless Timetable Management',
+    desc: 'Create and manage schedules in minutes. Our smart timetable generator helps you organize classes, teachers, and rooms without conflicts, ensuring smooth academic operations.',
   },
   {
     icon: <Book className="h-6 w-6" />,
-    title: 'Full Documentation',
-    desc: 'Comprehensive documentation to understand every feature and maximize your development experience.',
+    title: 'Secure Records & Storage',
+    desc: 'Keep student and staff records safe and organized. All your data is securely stored in one place, easily accessible whenever you need it, with top-notch privacy protection.',
   },
   {
-    icon: <PlusCircle className="h-6 w-6" />,
-    title: 'Contribute Yours',
-    desc: 'Add your own blocks to the library and become part of the MVPBlocks community.',
+    icon: <IconWorld className="h-6 w-6" />,
+    title: 'Online Learning Integration',
+    desc: 'Blend traditional and digital learning with ease. Share assignments, upload resources, and enable virtual classes, making education accessible anytime, anywhere.',
   },
 ];
 export default function Feature1() {
@@ -46,11 +49,12 @@ export default function Feature1() {
         <div className="relative mx-auto max-w-2xl sm:text-center">
           <div className="relative z-10">
             <h3 className="font-geist mt-4 text-3xl font-normal tracking-tighter sm:text-4xl md:text-5xl">
-              Let’s help build your MVP
+              Let’s Build Your School’s Future
             </h3>
             <p className="font-geist text-foreground/60 mt-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              congue, nisl eget molestie varius, enim ex faucibus purus.
+               Reduce paperwork, and enhance collaboration. Whether 
+               you run a small academy or a large institution, we help you automate daily
+               operations so you can focus on what truly matters—shaping young minds.
             </p>
           </div>
           <div

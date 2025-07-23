@@ -186,7 +186,7 @@ export default function NotebookHero() {
               />
 
               <div className="animate-in fade-in slide-in-from-left-4 absolute -top-6 -right-6 rotate-6 transform rounded-lg bg-white p-3 shadow-lg dark:bg-neutral-900">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 animate-pulse">
                   <svg
                     className="h-5 w-5 text-green-500"
                     fill="currentColor"

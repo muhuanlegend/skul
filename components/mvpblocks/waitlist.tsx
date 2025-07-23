@@ -71,7 +71,7 @@ export default function WaitlistPage() {
             alt="logo"
             className="spin h-6 w-6"
           />
-          <span className="text-sm font-medium">Mvpblocks</span>
+          <span className="text-sm font-medium">Hurry Up</span>
           <motion.div
             animate={{ x: [0, 5, 0] }}
             transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
@@ -102,9 +102,9 @@ export default function WaitlistPage() {
           transition={{ duration: 1, delay: 0.5 }}
           className="text-muted-foreground mt-2 mb-12 sm:text-lg"
         >
-          Be the first to access our revolutionary component library.
-          <br className="hidden sm:block" /> Build your MVP faster than ever
-          before.
+          Be Among the First to Transform Your School
+          <br className="hidden sm:block" />Join our waitlist today 
+          and get early access, priority onboarding, and exclusive features.
         </motion.p>
 
         <motion.div
@@ -120,8 +120,8 @@ export default function WaitlistPage() {
             )}
           >
             <Code className="text-primary mb-2 h-5 w-5" />
-            <span className="text-xl font-bold">100+</span>
-            <span className="text-muted-foreground text-xs">Components</span>
+            <span className="text-xl font-bold">Sign & Set Up</span>
+            <span className="text-muted-foreground text-xs">Get started in minutes.</span>
           </div>
 
           <div
@@ -131,8 +131,8 @@ export default function WaitlistPage() {
             )}
           >
             <ExternalLink className="text-primary mb-2 h-5 w-5" />
-            <span className="text-xl font-bold">Open Source</span>
-            <span className="text-muted-foreground text-xs">BSD 3-Clause</span>
+            <span className="text-xl font-bold">Manage & Automate</span>
+            <span className="text-muted-foreground text-xs">Handle daily operations effortlessly.</span>
           </div>
 
           <div
@@ -142,8 +142,8 @@ export default function WaitlistPage() {
             )}
           >
             <Star className="text-primary mb-2 h-5 w-5" />
-            <span className="text-xl font-bold">Premium</span>
-            <span className="text-muted-foreground text-xs">Quality</span>
+            <span className="text-xl font-bold">Grow & Improve</span>
+            <span className="text-muted-foreground text-xs">Use insights to improve performance.</span>
           </div>
         </motion.div>
 

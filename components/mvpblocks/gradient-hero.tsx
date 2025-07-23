@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, ChevronRight, ExternalLink, Github } from 'lucide-react';
+import { ArrowRight, ChevronRight, ExternalLink, Github, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -26,13 +26,13 @@ export default function GradientHero() {
             className="mx-auto mb-6 flex justify-center"
           >
             <div className="border-border bg-background/80 inline-flex items-center rounded-full border px-3 py-1 text-sm backdrop-blur-sm">
-              <span className="bg-primary mr-2 rounded-full px-2 py-0.5 text-xs font-semibold text-white">
+              <span className="bg-primary mr-2 rounded-full px-2 py-0.5 text-xs font-semibold text-rose-500 animate-pulse">
                 New
               </span>
               <span className="text-muted-foreground">
-                Introducing our latest component library
+                Introducing our latest school management web platform
               </span>
-              <ChevronRight className="text-muted-foreground ml-1 h-4 w-4" />
+              <ChevronRight className="text-muted-foreground ml-1 h-4 w-4 animate-ping" />
             </div>
           </motion.div>
 
@@ -43,7 +43,7 @@ export default function GradientHero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="from-primary/10 via-foreground/85 to-foreground/50 bg-gradient-to-tl bg-clip-text text-center text-4xl tracking-tighter text-balance text-transparent sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Build beautiful interfaces with speed and precision
+            Simplify School Management with Speed and Precision
           </motion.h1>
 
           {/* Description */}
@@ -53,9 +53,9 @@ export default function GradientHero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-muted-foreground mx-auto mt-6 max-w-2xl text-center text-lg"
           >
-            A modern UI component library designed to help developers create
-            stunning web applications with minimal effort. Fully customizable,
-            responsive, and accessible.
+           Our platform streamlines administration, communication, 
+           and learning, helping schools run efficiently and stay connected. 
+           Manage students, teachers, and operations—all from one powerful dashboard.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -81,8 +81,9 @@ export default function GradientHero() {
               size="lg"
               className="border-border bg-background/50 flex items-center gap-2 rounded-full backdrop-blur-sm"
             >
-              <Github className="h-4 w-4" />
-              Star on GitHub
+      
+              <Trophy className='h-4 w-4 animate-bounce' />
+              Rate on Trust Pilot
             </Button>
           </motion.div>
 
@@ -105,13 +106,13 @@ export default function GradientHero() {
                   <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
                   <div className="h-3 w-3 rounded-full bg-green-500"></div>
                 </div>
-                <div className="bg-background/50 text-muted-foreground mx-auto flex items-center rounded-md px-3 py-1 text-xs">
-                  https://your-awesome-app.com
+                <div className="bg-background/50 animate-pulse text-muted-foreground mx-auto flex items-center rounded-md px-3 py-1 text-xs">
+                  https://skul-gamma.vercel.app
                 </div>
               </div>
               <div className="relative">
                 <img
-                  src="https://i.postimg.cc/0yk8Vz7t/dashboard.webp"
+                  src="https://i.postimg.cc/BndzDzH6/dash.png"
                   alt="Dashboard Preview"
                   className="w-full"
                 />
@@ -120,12 +121,12 @@ export default function GradientHero() {
             </div>
 
             {/* Floating elements for visual interest */}
-            <div className="border-border/40 bg-background/80 absolute -top-6 -right-6 h-12 w-12 rounded-lg border p-3 shadow-lg backdrop-blur-md">
+            <div className="border-border/40 bg-background/80 absolute -top-6 -right-6 h-12 w-12 rounded-lg border p-3 shadow-lg animate-ping backdrop-blur-md">
               <div className="bg-primary/20 h-full w-full rounded-md"></div>
             </div>
             <div className="border-border/40 bg-background/80 absolute -bottom-4 -left-4 h-8 w-8 rounded-full border shadow-lg backdrop-blur-md"></div>
             <div className="border-border/40 bg-background/80 absolute right-12 -bottom-6 h-10 w-10 rounded-lg border p-2 shadow-lg backdrop-blur-md">
-              <div className="h-full w-full rounded-md bg-green-500/20"></div>
+              <div className="h-full w-full animate-spin rounded-md bg-green-500/20"></div>
             </div>
           </motion.div>
         </div>
