@@ -3,6 +3,8 @@ import { Separator } from "@/components/ui/separator"
 import { SidebarTrigger } from "@/components/ui/sidebar"
 import { ModeToggle } from "./mode-toggle"
 import { UserButton } from "@clerk/nextjs"
+import { ThemeSwitcher } from "./ui/kibo-ui/theme-switcher"
+import TypewriterDemo from "./mvpblocks/typewriter-demo"
 
 
 export function SiteHeader() {
@@ -15,7 +17,8 @@ export function SiteHeader() {
           className="mx-2 data-[orientation=vertical]:h-4"
         />
         
-        <h1 className="text-base font-medium">Documents</h1>
+        {/* <h1 className="text-base font-medium">Documents</h1> */}
+        <TypewriterDemo />
         <div className="ml-auto flex items-center gap-2">
           <UserButton />
           <Button variant="ghost" asChild size="sm" className="hidden sm:flex">
@@ -28,7 +31,8 @@ export function SiteHeader() {
               GitHub
             </a>
           </Button>
-          <ModeToggle />
+           <ModeToggle /> 
+          <ThemeSwitcher />
         </div>
       </div>
     </header>
