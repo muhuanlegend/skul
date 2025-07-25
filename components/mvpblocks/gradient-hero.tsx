@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, ChevronRight, ExternalLink, Github, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 export default function GradientHero() {
   return (
@@ -70,7 +71,10 @@ export default function GradientHero() {
               className="group bg-primary text-primary-foreground hover:shadow-primary/30 relative overflow-hidden rounded-full px-6 shadow-lg transition-all duration-300"
             >
               <span className="relative z-10 flex items-center">
+                <Link href={'/sign-in'}>
+                
                 Get Started
+                </Link>
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </span>
               <span className="from-primary via-primary/90 to-primary/80 absolute inset-0 z-0 bg-gradient-to-r opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
